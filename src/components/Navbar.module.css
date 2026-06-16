@@ -245,3 +245,239 @@
 @media (max-width: 480px) {
   .navbarInner { padding: 0 16px; }
 }
+
+/* Dropdown and Mega Menu Styles */
+.dropdownArrow {
+  font-size: 0.7rem;
+  margin-left: 6px;
+  transition: transform var(--transition-base);
+  display: inline-block;
+}
+
+.hasDropdown:hover .dropdownArrow {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Menu (1st Level) */
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 220px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 50, 100, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all var(--transition-base);
+  list-style: none;
+  z-index: 100;
+}
+
+.hasDropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdownItem {
+  position: relative;
+}
+
+.dropdownLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.dropdownLink:hover {
+  background: var(--primary-50);
+  color: var(--primary);
+}
+
+.submenuArrow {
+  font-size: 0.65rem;
+  color: var(--gray-400);
+  transition: transform var(--transition-fast);
+}
+
+.dropdownItem:hover .submenuArrow {
+  transform: translateX(3px);
+  color: var(--primary);
+}
+
+/* Submenu Menu (2nd Level) */
+.submenuMenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 240px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 50, 100, 0.08);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xl);
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all var(--transition-base);
+  list-style: none;
+  z-index: 101;
+}
+
+.dropdownItem:hover .submenuMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.submenuLink {
+  display: block;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.submenuLink:hover {
+  background: var(--primary-50);
+  color: var(--primary) !important;
+}
+
+/* Mobile Submenu & Nested Accordion Styles */
+.mobileNavItem {
+  width: 100%;
+}
+
+.mobileDropdownToggle {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.mobileDropdownArrow {
+  font-size: 0.8rem;
+  transition: transform var(--transition-base);
+}
+
+.mobileDropdownArrow.rotated {
+  transform: rotate(180deg);
+}
+
+.mobileSubmenu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  padding-left: 12px;
+}
+
+.mobileSubmenuOpen {
+  max-height: 800px;
+  opacity: 1;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+
+.mobileSubmenuCol {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.mobileSubmenuHeaderToggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
+}
+
+.mobileSubmenuHeaderToggle:hover {
+  background: var(--primary-50);
+}
+
+.mobileSubmenuArrow {
+  font-size: 0.75rem;
+  transition: transform var(--transition-base);
+}
+
+.mobileSubmenuArrow.rotated {
+  transform: rotate(180deg);
+}
+
+.mobileNestedMenu {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  padding-left: 16px;
+}
+
+.mobileNestedMenuOpen {
+  max-height: 600px;
+  opacity: 1;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.mobileNestedMenuLink {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  display: block;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.mobileNestedMenuLink:hover {
+  color: var(--primary) !important;
+  background: var(--primary-50) !important;
+}
+
+.mobileSubmenuLink {
+  font-size: 0.95rem;
+  color: var(--gray-600);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  display: block;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.mobileSubmenuLink:hover {
+  color: var(--primary) !important;
+  background: var(--primary-50) !important;
+}
+
