@@ -20,6 +20,44 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function getMedicalGasIcon(slug: string) {
+  switch (slug) {
+    case "medikal-oksijen-gazi":
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 2a5 5 0 0 0-5 5v3a5 5 0 0 0 10 0V7a5 5 0 0 0-5-5Z" />
+          <path d="M7 14h10v3a3 3 0 0 1-3 3h-4a3 3 0 0 1-3-3v-3Z" />
+          <circle cx="12" cy="7" r="1.2" fill="currentColor" />
+        </svg>
+      );
+    case "azot-protoksit-gazi":
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 8v8M8 12h8" />
+        </svg>
+      );
+    case "medikal-kuru-hava-gazi":
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M9.59 4.59A2 2 0 1 1 11 8H2M12.59 19.41A2 2 0 1 0 14 16H2M17.73 11.27A2.5 2.5 0 1 1 19.5 15H2" />
+        </svg>
+      );
+    case "medikal-karbondioksit-gazi":
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M12 2v20M17 5l-5 5-5-5M22 12H2M19 17l-5-5 5-5M5 17l5-5-5-5" />
+        </svg>
+      );
+    default:
+      return (
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+        </svg>
+      );
+  }
+}
+
 export default async function MedikalGazlarPage({ params }: Props) {
   const { locale } = await params;
   const currentLocale = locale as Locale;
@@ -64,7 +102,7 @@ export default async function MedikalGazlarPage({ params }: Props) {
             <article key={gas.slug} className={styles.card}>
               <div className={styles.cardHeader}>
                 <span className={styles.iconWrap} role="img" aria-label={gas.title}>
-                  {gas.icon || "🏥"}
+                  {getMedicalGasIcon(gas.slug)}
                 </span>
                 {gas.badge && <span className={styles.badge}>{gas.badge}</span>}
               </div>

@@ -90,16 +90,16 @@ export default async function MedicalGasDetailPage({ params }: Props) {
     : "供給および保管モデル";
 
   const safetyStandardLabel = locale === "tr"
-    ? "⚠️ Güvenlik Standardı"
+    ? "Güvenlik Standardı"
     : locale === "en"
-    ? "⚠️ Safety Standard"
+    ? "Safety Standard"
     : locale === "de"
-    ? "⚠️ Sicherheitsstandard"
+    ? "Sicherheitsstandard"
     : locale === "fr"
-    ? "⚠️ Norme de Sécurité"
+    ? "Norme de Sécurité"
     : locale === "it"
-    ? "⚠️ Standard di Sicurezza"
-    : "⚠️ 安全基準";
+    ? "Standard di Sicurezza"
+    : "安全基準";
 
   return (
     <>
@@ -216,10 +216,17 @@ export default async function MedicalGasDetailPage({ params }: Props) {
             </Link>
           </div>
 
-          {/* Safety Warning Block */}
+           {/* Safety Warning Block */}
           {gas.safetyWarning && (
             <div className={styles.warningBox}>
-              <span className={styles.warningTitle}>{safetyStandardLabel}</span>
+              <span className={styles.warningTitle} style={{ display: "inline-flex", alignItems: "center", gap: "8px" }}>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}>
+                  <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                  <line x1="12" y1="9" x2="12" y2="13" />
+                  <line x1="12" y1="17" x2="12.01" y2="17" />
+                </svg>
+                <span>{safetyStandardLabel}</span>
+              </span>
               <p>{gas.safetyWarning}</p>
             </div>
           )}

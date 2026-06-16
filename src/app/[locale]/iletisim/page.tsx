@@ -160,7 +160,12 @@ export default async function IletisimPage({ params }: Props) {
         <div className={styles.mapSectionInner}>
           <div className={styles.mapBox}>
             <div className={styles.mapPlaceholder}>
-              <div className={styles.mapPlaceholderIcon}>📍</div>
+              <div className={styles.mapPlaceholderIcon}>
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="var(--primary)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" style={{ margin: "0 auto" }}>
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
               <div className={styles.mapPlaceholderText}>
                 {locale === "tr" ? "Küçük Çiğli, Çiğli/İzmir — Google Haritalar" : "Kucuk Cigli, Cigli/Izmir — Google Maps"}
               </div>
