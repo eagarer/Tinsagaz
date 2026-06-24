@@ -146,6 +146,7 @@
 }
 
 .heroCard {
+  display: block;
   background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -262,6 +263,7 @@
   height: 60px;
   border-radius: var(--radius-md);
   background: var(--primary-50);
+  color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -272,6 +274,7 @@
 
 .serviceCard:hover .serviceIconWrap {
   background: var(--primary);
+  color: var(--white);
   transform: scale(1.08);
 }
 

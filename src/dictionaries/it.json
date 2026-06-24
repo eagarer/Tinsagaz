@@ -18,7 +18,7 @@
     "rights": "Tutti i diritti riservati.",
     "privacy": "Informativa sulla Privacy",
     "terms": "Termini di Utilizzo",
-    "address": "Kucuk Cigli, 8780/11. St. no:19, 35620 Cigli/Izmir",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nSede: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla\nFiliale: Ata San. Sit. 8780/11 Sk.No:19 Cigli / IZMIR\nFiliale: Karadag Cad. Emek Mah. No:33 Milas / MUGLA\nFiliale: Konacik San. Sit. J Blok no:6 Bodrum / MUGLA\nFiliale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
     "hours": "Lun–Gio: 08:30–17:45, Ven: 08:00–17:45"
   },
   "home": {
@@ -79,15 +79,23 @@
   "about": {
     "hero": {
       "title": "Chi Siamo",
-      "desc": "Dal 1994, siamo un'organizzazione leader che guida l'industria turca, distinguendosi per affidabilità e qualità. Scopri la nostra storia e i nostri valori."
+      "desc": "Dal 1995, siamo un'organizzazione leader che guida l'industria turca, distinguendosi per affidabilità e qualità. Scopri la nostra storia e i nostri valori."
     },
     "story": {
       "label": "La Nostra Storia",
-      "title": "Oltre 30 Anni di Esperienza",
-      "p1": "Iniziando come una piccola officina a Izmir nel 1994, Tinsagaz è diventata oggi uno dei principali produttori di gas industriali e medici in Turchia.",
-      "p2": "Servendo diversi settori con un ampio portafoglio di prodotti come gas medicali, gas industriali, sistemi elettrici, prodotti in acciaio, bombole e macchinari pesanti, la nostra azienda aumenta ogni anno la sua capacità e la qualità del servizio.",
-      "p3": "Esportando in 12 paesi, servendo più di 5.000 clienti e realizzando oltre 50.000 progetti di successo, Tinsagaz ha adottato la qualità, la sicurezza, l'innovazione e la soddisfazione del cliente come propri valori fondamentali.",
+      "title": "Affidabilità ed Esperienza nel Settore",
+      "p1": "Tinsa Ltd. Co. è stata fondata a Smirne nel 1995 da Ali BABUR con il 100% di capitale proprio. Da allora, si è affermata nel settore in aree quali la manutenzione navale, la verniciatura, la sabbiatura e la vendita di materiali chimici. Durante questo periodo, ha servito clienti importanti come la Marina, l'Aeronautica e le Forze Terrestri. Nel 2005 ha firmato un accordo di concessionaria di riempimento con Habaş A.Ş. su un'area di 1400 mq costruita sulla propria proprietà a Muğla, e ha messo in funzione il proprio impianto di riempimento di gas medici e industriali. Grazie a questa struttura, è diventata un partner commerciale affidabile nei settori sanitario e industriale.",
+      "p2": "Oggi continuiamo le nostre attività con le nostre filiali a Muğla, Bodrum, Milas, Marmaris e Çiğli e Aliağa a Smirne. Continuiamo a crescere grazie alla nostra esperienza nel settore, al nostro approccio di servizio di qualità e al nostro approccio orientato al cliente.",
+      "p3": "",
       "cta": "Mettiti in Contatto con Noi"
+    },
+    "mission": {
+      "title": "La Nostra Missione",
+      "text": "La nostra missione è fornire il servizio più affidabile e di alta qualità ai nostri clienti nei processi di fornitura di gas medici e industriali. Diamo sempre la massima priorità alla soddisfazione del cliente e miriamo a fare la differenza nel settore producendo soluzioni innovative. Collaborando con aziende leader, miriamo a offrire le soluzioni più adatte per lo sviluppo delle tecnologie e delle esigenze dei clienti. Forniamo soluzioni sostenibili nei settori sanitario e industriale con servizi di riempimento gas accurati e affidabili."
+    },
+    "vision": {
+      "title": "La Nostra Visione",
+      "text": "La nostra visione è quella di diventare uno dei fornitori di gas medici e industriali più affidabili e innovativi in Turchia. Operiamo con un approccio al servizio che possiede elevati standard qualitativi e supera le aspettative dei clienti. Il nostro obiettivo è aumentare la nostra competitività nel settore crescendo continuamente nei mercati nazionali e internazionali."
     },
     "values": {
       "label": "I Nostri Valori Fondamentali",
@@ -149,7 +157,10 @@
     "specs": "Specifiche Tecniche",
     "ctaTitle": "Richiedi un Preventivo",
     "ctaDesc": "prodotto. Puoi richiedere rapidamente un preventivo per conoscere i prezzi personalizzati e le condizioni di fornitura.",
-    "ctaButton": "Contattaci"
+    "ctaButton": "Contattaci",
+    "msdsTitle": "Scheda di Dati di Sicurezza (MSDS)",
+    "msdsDesc": "Scarica il documento ufficiale contenente informazioni dettagliate sulle proprietà chimiche, i pericoli e le precauzioni di sicurezza di questo gas.",
+    "msdsButton": "Visualizza MSDS (PDF)"
   },
   "kvkkPage": {
     "title": "Testo Informativa KVKK",

@@ -18,7 +18,7 @@
     "rights": "Tüm hakları saklıdır.",
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları",
-    "address": "Küçük Çiğli, 8780/11. Sk. no:19, 35620 Çiğli/İzmir",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nMerkez: Ticaret Merkezi 5. Blok No:3 Bayır / Muğla\nŞube: Ata San. Sit. 8780/11 Sk.No:19 Çiğli / İZMİR\nŞube: Karadağ Cad. Emek Mah. No:33 Milas / MUĞLA\nŞube: Konacık San. Sit. J Blok no:6 Bodrum / MUĞLA\nŞube: Aliağa San. Sit. Samurlu Mah. 1244 Sk No:18 Aliağa / İZMİR",
     "hours": "Pzt–Per: 08:30–17:45, Cum: 08:00–17:45"
   },
   "home": {
@@ -79,15 +79,23 @@
   "about": {
     "hero": {
       "title": "Hakkımızda",
-      "desc": "1994'ten bu yana Türk sanayisine güç veren, güvenilirlik ve kaliteyle öne çıkan bir kuruluşuz. Hikayemizi ve değerlerimizi keşfedin."
+      "desc": "1995'ten bu yana Türk sanayisine güç veren, güvenilirlik ve kaliteyle öne çıkan bir kuruluşuz. Hikayemizi ve değerlerimizi keşfedin."
     },
     "story": {
       "label": "Hikayemiz",
-      "title": "30 Yılı Aşkın Tecrübe",
-      "p1": "1994 yılında İzmir'de küçük bir atölye olarak yola çıkan Tinsagaz, bugün Türkiye'nin önde gelen endüstriyel ve medikal gaz üreticilerinden biri haline gelmiştir.",
-      "p2": "Medikal gazlar, endüstriyel gazlar, elektrik sistemleri, çelik ürünleri, tüp sistemleri ve ağır makineler gibi geniş bir ürün yelpazesiyle farklı sektörlere hizmet veren firmamız, her geçen yıl kapasitesini ve hizmet kalitesini artırmaktadır.",
-      "p3": "Bugün 12 ülkeye ihracat yapan, 5.000'i aşkın müşteriye hizmet sunan ve 50.000'den fazla başarılı projeye imza atan Tinsagaz; kalite, güvenlik, inovasyon ve müşteri memnuniyetini temel değerleri olarak benimsemiştir.",
+      "title": "Sektörde Güvenilirlik ve Deneyim",
+      "p1": "Tinsa Ltd. Şti., 1995 yılında Ali BABUR tarafından Izmir'de %100 öz sermaye ile kuruldu. O günden bu yana, gemi bakım, boya, raspa ve kimyasal malzeme satışları gibi alanlarda sektörde kendini kanıtladı. Bu süreçte, Deniz, Hava ve Kara Kuvvetleri gibi önemli müşterilere hizmet sundu. 2005 yılında ise, Muğla'da kendi mülkünde kurduğu 1400 m²'lik alanda Habaş A.Ş. ile dolum bayiliği sözleşmesi imzalayarak, medikal ve sınaî gaz dolum tesisini faaliyete geçirdi. Bu tesis sayesinde, sağlık ve sanayi sektörlerinde güvenilir bir iş ortağı haline geldi.",
+      "p2": "Bugün, Muğla, Bodrum, Milas, Marmaris ve İzmir'deki Çiğli ve Aliağa şubelerimizle faaliyetlerimize devam ediyoruz. Sektördeki deneyimimiz, kaliteli hizmet anlayışımız ve müşteri odaklı yaklaşımımızla büyümeye devam ediyoruz.",
+      "p3": "",
       "cta": "Bizimle İletişime Geçin"
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "text": "Misyonumuz, medikal ve sınaî gaz tedarik süreçlerinde müşterilerimize en güvenilir ve kaliteli hizmeti sunmaktır. Müşteri memnuniyetini her zaman ön planda tutuyor, yenilikçi çözümler üreterek sektörde fark yaratmayı hedefliyoruz. Lider firmalarla iş birliği yaparak, gelişen teknolojilere ve müşteri ihtiyaçlarına en uygun çözümleri sunmayı amaçlıyoruz. Sağlık ve sanayi sektörlerinde, doğru ve güvenilir gaz dolum hizmetleriyle sürdürülebilir çözümler sunuyoruz."
+    },
+    "vision": {
+      "title": "Vizyonumuz",
+      "text": "Vizyonumuz, Türkiye'nin en güvenilir ve yenilikçi medikal ve sınaî gaz tedarikçilerinden biri olmaktır. Yüksek kalite standartlarına sahip, müşteri beklentilerini aşan bir hizmet anlayışıyla hareket ediyoruz. Hedefimiz, ulusal ve uluslararası pazarlarda sürekli büyüyerek sektördeki rekabet gücümüzü arttırmaktadır."
     },
     "values": {
       "label": "Temel Değerlerimiz",
@@ -149,7 +157,10 @@
     "specs": "Teknik Özellikler",
     "ctaTitle": "Teklif Alın",
     "ctaDesc": "ürünü için özel fiyat ve tedarik koşullarını öğrenmek üzere hızlıca teklif isteyebilirsiniz.",
-    "ctaButton": "İletişime Geçin"
+    "ctaButton": "İletişime Geçin",
+    "msdsTitle": "Güvenlik Bilgi Formu (MSDS)",
+    "msdsDesc": "Bu gazın kimyasal özellikleri, tehlikeleri ve güvenlik önlemleri hakkında ayrıntılı bilgi içeren resmi dökümanı indirin.",
+    "msdsButton": "MSDS Görüntüle (PDF)"
   },
   "kvkkPage": {
     "title": "KVKK Aydınlatma Metni",

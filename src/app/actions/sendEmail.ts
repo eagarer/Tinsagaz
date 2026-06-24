@@ -23,7 +23,7 @@ export async function sendEmailAction(data: SendEmailData) {
   if (!host || !user || !pass) {
     console.warn("SMTP credentials are not configured. Falling back to console simulation.");
     console.log("--- Simulated Contact Form E-mail ---");
-    console.log(`To: info@tinsagaz.com.tr`);
+    console.log(`To: info@tinsagaz.com`);
     console.log(`From: ${ad} ${soyad} <${email}>`);
     console.log(`Phone: ${telefon || 'Not provided'}`);
     console.log(`Subject: ${konu}`);
@@ -45,7 +45,7 @@ export async function sendEmailAction(data: SendEmailData) {
 
     const mailOptions = {
       from: `"${ad} ${soyad} (Web Form)" <${user}>`,
-      to: 'info@tinsagaz.com.tr',
+      to: 'info@tinsagaz.com',
       replyTo: email,
       subject: `Tinsagaz İletişim: ${konu} - ${ad} ${soyad}`,
       text: `Ad Soyad: ${ad} ${soyad}\nE-posta: ${email}\nTelefon: ${telefon || 'Belirtilmedi'}\nKonu: ${konu}\n\nMesaj:\n${mesaj}`,

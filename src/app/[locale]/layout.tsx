@@ -47,8 +47,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: {
-      default: titleText,
-      template: "%s | Tinsagaz",
+      default: "Tinsagaz",
+      template: "Tinsagaz",
     },
     description: descText,
     keywords: [

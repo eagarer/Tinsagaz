@@ -169,7 +169,7 @@ export default function Footer({ lang, footerDict, navDict }: { lang: Locale; fo
                 <circle cx="12" cy="10" r="3" />
               </svg>
             </span>
-            <span>{footerDict.address}</span>
+            <span style={{ whiteSpace: 'pre-line' }}>{footerDict.address}</span>
           </div>
           <div className={styles.footerContactItem}>
             <span className={styles.footerContactIcon}>
@@ -186,7 +186,7 @@ export default function Footer({ lang, footerDict, navDict }: { lang: Locale; fo
                 <polyline points="22,6 12,13 2,6" />
               </svg>
             </span>
-            <span>info@tinsagaz.com.tr</span>
+            <span>info@tinsagaz.com</span>
           </div>
           <div className={styles.footerContactItem}>
             <span className={styles.footerContactIcon}>

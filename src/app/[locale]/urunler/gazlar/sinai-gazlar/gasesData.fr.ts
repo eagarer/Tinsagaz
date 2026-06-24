@@ -20,7 +20,7 @@ export const frGasesData: GasProduct[] = [
     ],
     specifications: [
       { label: "Formule Chimique", value: "O₂" },
-      { label: "Pression de Remplissage", value: "150 - 200 Bar" },
+      { label: "Pression de Remplissage", value: "150 - 230 Bar" },
       { label: "Norme de Propreté", value: "Nettoyé pour l'Oxygène" },
       { label: "Modèle d'Emballage", value: "Bouteille sous Pression / Cadre de Bouteilles (Bundle)" }
     ],

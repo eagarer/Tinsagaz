@@ -18,7 +18,7 @@
     "rights": "Alle Rechte vorbehalten.",
     "privacy": "Datenschutzrichtlinie",
     "terms": "Nutzungsbedingungen",
-    "address": "Kucuk Cigli, 8780/11. St. no:19, 35620 Cigli/Izmir",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nHauptsitz: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla\nFiliale: Ata San. Sit. 8780/11 Sk.No:19 Cigli / IZMIR\nFiliale: Karadag Cad. Emek Mah. No:33 Milas / MUGLA\nFiliale: Konacik San. Sit. J Blok no:6 Bodrum / MUGLA\nFiliale: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
     "hours": "Mo–Do: 08:30–17:45, Fr: 08:00–17:45"
   },
   "home": {
@@ -79,15 +79,23 @@
   "about": {
     "hero": {
       "title": "Über Uns",
-      "desc": "Seit 1994 sind wir ein führendes Unternehmen, das die türkische Industrie antreibt und sich durch Zuverlässigkeit und Qualität auszeichnet. Entdecken Sie unsere Geschichte und Werte."
+      "desc": "Seit 1995 sind wir ein führendes Unternehmen, das die türkische Industrie antreibt und sich durch Zuverlässigkeit und Qualität auszeichnet. Entdecken Sie unsere Geschichte und Werte."
     },
     "story": {
       "label": "Unsere Geschichte",
-      "title": "Über 30 Jahre Erfahrung",
-      "p1": "Tinsagaz begann 1994 als kleine Werkstatt in Izmir und hat sich heute zu einem der führenden Hersteller von Industrie- und Medizinischen Gasen in der Türkei entwickelt.",
-      "p2": "Unser Unternehmen bedient verschiedene Sektoren mit einem breiten Produktportfolio wie medizinischen Gasen, Industriegasen, elektrischen Systemen, Stahlprodukten, Flaschensystemen und schweren Maschinen und steigert jedes Jahr seine Kapazität und Servicequalität.",
-      "p3": "Tinsagaz exportiert in 12 Länder, bedient mehr als 5.000 Kunden und blickt auf über 50.000 erfolgreiche Projekte zurück. Qualität, Sicherheit, Innovation und Kundenzufriedenheit sind unsere Kernwerte.",
+      "title": "Zuverlässigkeit und Erfahrung in der Branche",
+      "p1": "Tinsa Ltd. Co. wurde 1995 von Ali BABUR in Izmir mit 100 % Eigenkapital gegründet. Seitdem hat sich das Unternehmen in der Branche in Bereichen wie Schiffswartung, Lackierung, Sandstrahlen und dem Verkauf von chemischen Materialien bewährt. In dieser Zeit bediente es wichtige Kunden wie die Marine, Luft- und Landstreitkräfte. Im Jahr 2005 unterzeichnete es einen Abfüll-Händlervertrag mit Habaş A.Ş. auf einer 1400 m² großen Fläche, die auf einem eigenen Grundstück in Muğla errichtet wurde, und nahm seine Abfüllanlage für medizinische und industrielle Gase in Betrieb. Dank dieser Anlage hat sich das Unternehmen zu einem zuverlässigen Partner im Gesundheits- und Industriesektor entwickelt.",
+      "p2": "Heute setzen wir unsere Aktivitäten mit unseren Filialen in Muğla, Bodrum, Milas, Marmaris sowie Çiğli und Aliağa in İzmir fort. Wir wachsen weiter mit unserer Erfahrung in der Branche, unserem Qualitätsbewusstsein und unserem kundenorientierten Ansatz.",
+      "p3": "",
       "cta": "Kontaktieren Sie uns"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "text": "Unsere Mission ist es, unseren Kunden bei der Versorgung mit medizinischen und industriellen Gasen den zuverlässigsten und qualitativ hochwertigsten Service zu bieten. Wir legen stets großen Wert auf die Zufriedenheit unserer Kunden und wollen durch innovative Lösungen einen Unterschied in der Branche machen. Durch die Zusammenarbeit mit führenden Unternehmen möchten wir die am besten geeigneten Lösungen für sich entwickelnde Technologien und Kundenbedürfnisse anbieten. Wir bieten nachhaltige Lösungen im Gesundheits- und Industriesektor mit präzisen und zuverlässigen Gasabfüllungen."
+    },
+    "vision": {
+      "title": "Unsere Vision",
+      "text": "Unsere Vision ist es, einer der zuverlässigsten und innovativsten Anbieter von medizinischen und industriellen Gasen in der Türkei zu werden. Wir arbeiten mit einem Serviceansatz, der hohe Qualitätsstandards aufweist und die Erwartungen der Kunden übertrifft. Unser Ziel ist es, unsere Wettbewerbsfähigkeit in der Branche durch kontinuierliches Wachstum auf nationalen und internationalen Märkten zu steigern."
     },
     "values": {
       "label": "Unsere Grundwerte",
@@ -149,7 +157,10 @@
     "specs": "Technische Spezifikationen",
     "ctaTitle": "Angebot einholen",
     "ctaDesc": "Produkt. Sie können schnell ein Angebot anfordern, um sich über kundenspezifische Preise und Lieferbedingungen zu informieren.",
-    "ctaButton": "Kontaktieren Sie uns"
+    "ctaButton": "Kontaktieren Sie uns",
+    "msdsTitle": "Sicherheitsdatenblatt (MSDS)",
+    "msdsDesc": "Laden Sie das offizielle Dokument mit detaillierten Informationen über die chemischen Eigenschaften, Gefahren und Sicherheitsvorkehrungen dieses Gases herunter.",
+    "msdsButton": "MSDS Anzeigen (PDF)"
   },
   "kvkkPage": {
     "title": "KVKK-Aufklärungstext",

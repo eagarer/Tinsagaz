@@ -13,20 +13,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const currentLocale = locale as Locale;
   const dict = await getDictionary(currentLocale);
 
-  const titleText = currentLocale === "tr"
-    ? "Tinsagaz | Endüstriyel Gazlar, Medikal Gazlar ve Çelik Üretimi"
-    : currentLocale === "en"
-    ? "Tinsagaz | Industrial Gases, Medical Gases and Steel Production"
-    : currentLocale === "de"
-    ? "Tinsagaz | Industriegase, Medizinische Gase und Stahlproduktion"
-    : currentLocale === "fr"
-    ? "Tinsagaz | Gaz Industriels, Gaz Médicaux et Production d'Acier"
-    : currentLocale === "it"
-    ? "Tinsagaz | Gas Industriali, Gas Medicali e Produzione di Acciaio"
-    : "Tinsagaz | 産業用ガス、医療用ガス、鉄鋼生産";
-
   return {
-    title: titleText,
+    title: "Tinsagaz",
     description: dict.footer.desc,
   };
 }
@@ -210,13 +198,13 @@ export default async function HomePage({ params }: Props) {
             </div>
           </div>
 
-          <div className={styles.heroVisual} aria-hidden="true">
+          <div className={styles.heroVisual}>
             <div className={styles.heroCards}>
               {services.slice(0, 4).map((s) => (
-                <div key={s.id} className={styles.heroCard}>
+                <Link key={s.id} href={s.href} className={styles.heroCard}>
                   <span className={styles.heroCardIcon}>{s.icon}</span>
                   <span className={styles.heroCardLabel}>{s.title}</span>
-                </div>
+                </Link>
               ))}
             </div>
           </div>

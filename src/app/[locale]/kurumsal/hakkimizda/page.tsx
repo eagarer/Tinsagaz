@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const dict = await getDictionary(currentLocale);
 
   return {
-    title: `${dict.about.hero.title} | Tinsagaz`,
+    title: "Tinsagaz",
     description: dict.about.hero.desc,
   };
 }
@@ -25,12 +25,7 @@ export default async function HakkimizdaPage({ params }: Props) {
   const currentLocale = locale as Locale;
   const dict = await getDictionary(currentLocale);
 
-  const teamRoles: Record<string, string> = {
-    "Genel Müdür": locale === "tr" ? "Genel Müdür" : locale === "en" ? "General Manager" : locale === "de" ? "Geschäftsführer" : locale === "fr" ? "Directeur Général" : locale === "it" ? "Direttore Generale" : "代表取締役",
-    "Ar-Ge Direktörü": locale === "tr" ? "Ar-Ge Direktörü" : locale === "en" ? "R&D Director" : locale === "de" ? "F&E-Direktor" : locale === "fr" ? "Directeur R&D" : locale === "it" ? "Direttore R&D" : "研究開発部長",
-    "Üretim Direktörü": locale === "tr" ? "Üretim Direktörü" : locale === "en" ? "Production Director" : locale === "de" ? "Produktionsleiter" : locale === "fr" ? "Directeur de Production" : locale === "it" ? "Direttore di Produzione" : "製造部長",
-    "Satış & Pazarlama Direktörü": locale === "tr" ? "Satış & Pazarlama Direktörü" : locale === "en" ? "Sales & Marketing Director" : locale === "de" ? "Vertriebs- & Marketingleiter" : locale === "fr" ? "Directeur Commercial & Marketing" : locale === "it" ? "Direttore Vendite e Marketing" : "営業・マーケティング部長",
-  };
+
 
   const milestonesData = [
     {
@@ -191,48 +186,7 @@ export default async function HakkimizdaPage({ params }: Props) {
     },
   ];
 
-  const team = [
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-          <circle cx="12" cy="7" r="4" />
-        </svg>
-      ),
-      name: "Ahmet Yılmaz",
-      role: teamRoles["Genel Müdür"],
-    },
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-          <circle cx="12" cy="7" r="4" />
-        </svg>
-      ),
-      name: "Selin Kaya",
-      role: teamRoles["Ar-Ge Direktörü"],
-    },
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-          <circle cx="12" cy="7" r="4" />
-        </svg>
-      ),
-      name: "Mehmet Demir",
-      role: teamRoles["Üretim Direktörü"],
-    },
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-          <circle cx="12" cy="7" r="4" />
-        </svg>
-      ),
-      name: "Ayşe Çelik",
-      role: teamRoles["Satış & Pazarlama Direktörü"],
-    },
-  ];
+
 
   return (
     <>
@@ -268,12 +222,41 @@ export default async function HakkimizdaPage({ params }: Props) {
               <p className="section-label">{dict.about.story.label}</p>
               <h2 className="section-title">{dict.about.story.title}</h2>
               <div className="divider" />
-              <p>{dict.about.story.p1}</p>
-              <p>{dict.about.story.p2}</p>
-              <p>{dict.about.story.p3}</p>
+              {dict.about.story.p1 && <p>{dict.about.story.p1}</p>}
+              {dict.about.story.p2 && <p>{dict.about.story.p2}</p>}
+              {dict.about.story.p3 && <p>{dict.about.story.p3}</p>}
               <Link href={`/${locale}/iletisim`} id="about-contact-btn" className="btn btn-primary" style={{marginTop: '24px', display: 'inline-flex'}}>
                 {dict.about.story.cta}
               </Link>
+            </div>
+          </div>
+
+          {/* Mission & Vision Section */}
+          <div className={styles.missionVisionGrid}>
+            <div className={styles.missionCard}>
+              <div className={styles.mvHeader}>
+                <div className={styles.mvIcon}>
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <circle cx="12" cy="12" r="10" />
+                    <circle cx="12" cy="12" r="6" />
+                    <circle cx="12" cy="12" r="2" />
+                  </svg>
+                </div>
+                <h3 className={styles.mvTitle}>{dict.about.mission.title}</h3>
+              </div>
+              <p className={styles.mvText}>{dict.about.mission.text}</p>
+            </div>
+            <div className={styles.visionCard}>
+              <div className={styles.mvHeader}>
+                <div className={styles.mvIcon}>
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </div>
+                <h3 className={styles.mvTitle}>{dict.about.vision.title}</h3>
+              </div>
+              <p className={styles.mvText}>{dict.about.vision.text}</p>
             </div>
           </div>
 
@@ -294,22 +277,6 @@ export default async function HakkimizdaPage({ params }: Props) {
             </div>
           </div>
 
-          {/* Team */}
-          <div className={styles.teamSection} aria-label="Yönetim ekibi">
-            <p className="section-label">{dict.about.team.label}</p>
-            <h2 className="section-title">{dict.about.team.title}</h2>
-            <div className={styles.teamGrid}>
-              {team.map((t) => (
-                <article key={t.name} id={`team-${t.name.replace(/\s/g, "-").toLowerCase()}`} className={styles.teamCard}>
-                  <div className={styles.teamAvatar} aria-hidden="true">{t.icon}</div>
-                  <div className={styles.teamBody}>
-                    <h3 className={styles.teamName}>{t.name}</h3>
-                    <p className={styles.teamRole}>{t.role}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 

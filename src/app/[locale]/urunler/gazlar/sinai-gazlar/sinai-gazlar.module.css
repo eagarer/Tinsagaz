@@ -296,3 +296,78 @@
   line-height: 1.6;
 }
 
+/* MSDS Widget */
+.msdsWidget {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.msdsHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.msdsIcon {
+  width: 48px;
+  height: 48px;
+  background: #fef2f2;
+  color: #ef4444;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  border: 1px solid #fee2e2;
+}
+
+.msdsTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0;
+}
+
+.msdsTitle::after {
+  display: none !important;
+}
+
+.msdsDesc {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.msdsButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background: #ef4444;
+  color: var(--white) !important;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.15);
+}
+
+.msdsButton:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.25);
+}
+
+

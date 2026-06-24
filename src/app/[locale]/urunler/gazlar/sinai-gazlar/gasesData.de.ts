@@ -20,7 +20,7 @@ export const deGasesData: GasProduct[] = [
     ],
     specifications: [
       { label: "Chemische Formel", value: "O₂" },
-      { label: "Fülldruck", value: "150 - 200 Bar" },
+      { label: "Fülldruck", value: "150 - 230 Bar" },
       { label: "Reinheitsstandard", value: "Sauerstoff-gereinigt" },
       { label: "Verpackungsmodell", value: "Druckflasche / Bündelanlage" }
     ],

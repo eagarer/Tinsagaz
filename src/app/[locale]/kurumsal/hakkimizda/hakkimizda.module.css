@@ -237,9 +237,96 @@
   margin-top: 2px;
 }
 
+/* Mission & Vision Section */
+.missionVisionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 96px;
+}
+
+.missionCard,
+.visionCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.missionCard::before,
+.visionCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--primary-light), var(--accent));
+  opacity: 0.8;
+  transition: all var(--transition-base);
+}
+
+.missionCard:hover,
+.visionCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-100);
+}
+
+.missionCard:hover::before,
+.visionCard:hover::before {
+  height: 6px;
+  opacity: 1;
+}
+
+.mvHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.mvIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--primary-50);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-base);
+}
+
+.missionCard:hover .mvIcon,
+.visionCard:hover .mvIcon {
+  background: var(--primary);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+.mvTitle {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.mvText {
+  font-size: 0.95rem;
+  color: var(--gray-500);
+  line-height: 1.75;
+}
+
 @media (max-width: 1024px) {
   .storyGrid { grid-template-columns: 1fr; }
   .storyImageWrap { display: none; }
+  .missionVisionGrid { grid-template-columns: 1fr; gap: 24px; }
   .valuesGrid, .teamGrid, .milestonesGrid, .certsGrid { grid-template-columns: repeat(2, 1fr); }
   .milestone { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 24px; }
   .valuesSection { padding: 48px 32px; }

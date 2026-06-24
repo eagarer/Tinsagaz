@@ -18,7 +18,7 @@
     "rights": "All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
-    "address": "Kucuk Cigli, 8780/11. St. no:19, 35620 Cigli/Izmir",
+    "address": "Tinsa Tıbbi ve Sınai Gazlar San. ve Tic. Ltd. Şti.\nHeadquarters: Ticaret Merkezi 5. Blok No:3 Bayir / Mugla\nBranch: Ata San. Sit. 8780/11 Sk.No:19 Cigli / IZMIR\nBranch: Karadag Cad. Emek Mah. No:33 Milas / MUGLA\nBranch: Konacik San. Sit. J Blok no:6 Bodrum / MUGLA\nBranch: Aliaga San. Sit. Samurlu Mah. 1244 Sk No:18 Aliaga / IZMIR",
     "hours": "Mon–Thu: 08:30–17:45, Fri: 08:00–17:45"
   },
   "home": {
@@ -79,15 +79,23 @@
   "about": {
     "hero": {
       "title": "About Us",
-      "desc": "Since 1994, we are a leading organization driving Turkish industry, standing out with reliability and quality. Discover our story and values."
+      "desc": "Since 1995, we are a leading organization driving Turkish industry, standing out with reliability and quality. Discover our story and values."
     },
     "story": {
       "label": "Our Story",
-      "title": "Over 30 Years of Experience",
-      "p1": "Starting as a small workshop in Izmir in 1994, Tinsagaz has become one of Turkey's leading industrial and medical gas producers today.",
-      "p2": "Serving different sectors with a wide product portfolio such as medical gases, industrial gases, electrical systems, steel products, cylinder systems, and heavy machinery, our company increases its capacity and service quality every year.",
-      "p3": "Exporting to 12 countries, serving more than 5,000 customers, and achieving over 50,000 successful projects, Tinsagaz has adopted quality, safety, innovation, and customer satisfaction as its core values.",
+      "title": "Reliability and Experience in the Sector",
+      "p1": "Tinsa Ltd. Co. was founded in Izmir in 1995 by Ali BABUR with 100% equity. Since then, it has proven itself in the sector in areas such as ship maintenance, painting, blasting, and sales of chemical materials. During this period, it served important clients such as the Navy, Air, and Land Forces. In 2005, it signed a filling dealership agreement with Habaş A.Ş. on a 1400 m² area built on its own property in Muğla, and put its medical and industrial gas filling plant into operation. Thanks to this facility, it has become a reliable business partner in the healthcare and industrial sectors.",
+      "p2": "Today, we continue our operations with our branches in Muğla, Bodrum, Milas, Marmaris, and Çiğli and Aliağa in İzmir. We continue to grow with our experience in the sector, our quality service approach, and our customer-oriented approach.",
+      "p3": "",
       "cta": "Get in Touch with Us"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "Our mission is to provide the most reliable and high-quality service to our customers in medical and industrial gas supply processes. We always prioritize customer satisfaction and aim to make a difference in the sector by producing innovative solutions. By cooperating with leading companies, we aim to offer the most suitable solutions for developing technologies and customer needs. We provide sustainable solutions in the healthcare and industrial sectors with accurate and reliable gas filling services."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "text": "Our vision is to become one of the most reliable and innovative medical and industrial gas suppliers in Turkey. We operate with a service approach that possesses high quality standards and exceeds customer expectations. Our goal is to increase our competitiveness in the sector by growing continuously in national and international markets."
     },
     "values": {
       "label": "Our Core Values",
@@ -149,7 +157,10 @@
     "specs": "Technical Specifications",
     "ctaTitle": "Get a Quote",
     "ctaDesc": "product. You can quickly request a quote to learn about custom pricing and supply conditions.",
-    "ctaButton": "Contact Us"
+    "ctaButton": "Contact Us",
+    "msdsTitle": "Safety Data Sheet (MSDS)",
+    "msdsDesc": "Download the official document containing detailed information about the chemical properties, hazards, and safety precautions of this gas.",
+    "msdsButton": "View MSDS (PDF)"
   },
   "kvkkPage": {
     "title": "KVKK Clarification Text",

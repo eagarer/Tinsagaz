@@ -20,7 +20,7 @@ export const enGasesData: GasProduct[] = [
     ],
     specifications: [
       { label: "Chemical Formula", value: "O₂" },
-      { label: "Filling Pressure", value: "150 - 200 Bar" },
+      { label: "Filling Pressure", value: "150 - 230 Bar" },
       { label: "Cleanliness Standard", value: "Oxygen Cleaned" },
       { label: "Packaging Model", value: "Pressurized Cylinder / Manifold Pack" }
     ],

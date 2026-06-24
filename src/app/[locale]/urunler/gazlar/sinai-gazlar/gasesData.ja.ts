@@ -20,7 +20,7 @@ export const jaGasesData: GasProduct[] = [
     ],
     specifications: [
       { label: "化学式", value: "O₂" },
-      { label: "充填圧力", value: "150 - 200 Bar" },
+      { label: "充填圧力", value: "150 - 230 Bar" },
       { label: "クリーン基準", value: "酸素クリーン対応" },
       { label: "容器モデル", value: "高圧シリンダー / マニホールド・システム (カードル)" }
     ],

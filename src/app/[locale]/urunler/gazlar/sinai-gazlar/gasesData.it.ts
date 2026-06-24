@@ -20,7 +20,7 @@ export const itGasesData: GasProduct[] = [
     ],
     specifications: [
       { label: "Formula Chimica", value: "O₂" },
-      { label: "Pressione di Riempimento", value: "150 - 200 Bar" },
+      { label: "Pressione di Riempimento", value: "150 - 230 Bar" },
       { label: "Standard di Pulizia", value: "Pulito per Ossigeno" },
       { label: "Modello di Imballaggio", value: "Bombola a Pressione / Pacco Bombole (Bundle)" }
     ],

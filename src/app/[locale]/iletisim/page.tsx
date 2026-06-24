@@ -56,7 +56,7 @@ export default async function IletisimPage({ params }: Props) {
         </svg>
       ),
       label: dict.contact.info.emailTitle,
-      value: "info@tinsagaz.com.tr\nsatis@tinsagaz.com.tr",
+      value: "info@tinsagaz.com\nsatis@tinsagaz.com",
     },
   ];
 
@@ -167,7 +167,7 @@ export default async function IletisimPage({ params }: Props) {
                 </svg>
               </div>
               <div className={styles.mapPlaceholderText}>
-                {locale === "tr" ? "Küçük Çiğli, Çiğli/İzmir — Google Haritalar" : "Kucuk Cigli, Cigli/Izmir — Google Maps"}
+                {locale === "tr" ? "Ticaret Merkezi 5. Blok No:3 Bayır / Muğla — Google Haritalar" : "Ticaret Merkezi 5. Blok No:3 Bayir / Mugla — Google Maps"}
               </div>
             </div>
           </div>

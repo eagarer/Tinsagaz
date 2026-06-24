@@ -32,7 +32,7 @@ export const gasesData: GasProduct[] = [
     ],
     specifications: [
       { label: "Kimyasal Formül", value: "O₂" },
-      { label: "Dolum Basıncı", value: "150 - 200 Bar" },
+      { label: "Dolum Basıncı", value: "150 - 230 Bar" },
       { label: "Temizlik Standardı", value: "Oksijen Temizliği" },
       { label: "Ambalaj Modeli", value: "Basınçlı Silindir / Manifold" }
     ],
